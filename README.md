@@ -44,3 +44,37 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 
 Source for install instructions: https://nvchad.com/docs/quickstart/install
 
+## Docker
+
+1. Install `docker` by following [the instructions](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04)
+2. Install `docker compose` by following [the instructions](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04)
+
+## nvm (node version manager)
+
+nvm repository: https://github.com/nvm-sh/nvm
+
+Plan:
+
+1. Install nvm by running the command:
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```
+
+## node.js
+
+Install node.js & nvm:
+
+```sh
+nvm install --lts
+nvm use --lts
+nvm alias default 20 # current lts version
+```
+
+## Angular CLI
+
+Install @angular/cli package globally:
+
+```sh
+npm install -g @angular/cli
+```
