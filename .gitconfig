@@ -1,0 +1,8 @@
+[user]
+	name = Marat Maksumov
+	email = maxumov@gmail.com
+[core]
+	quotepath = off
+	autocrlf = input
+	safecrlf = warn
+	editor = nvim
