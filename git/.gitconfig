@@ -1,0 +1,17 @@
+[user]
+	name = Marat Maksumov
+	email = maksumov@users.noreply.github.com
+	signingkey = E67DE0507BC6DE0F
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
