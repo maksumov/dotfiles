@@ -12,6 +12,10 @@ Each top-level directory is a stow package; its contents are symlinked into
 sudo pacman -S stow git zsh zsh-autosuggestions zsh-syntax-highlighting \
   nvm fzf fd zoxide starship tmux neovim lazygit btop alacritty
 
+# or restore all previously installed packages from the snapshots
+sudo pacman -S --needed - < ~/dotfiles/pkglist.txt
+yay -S --needed - < ~/dotfiles/aurlist.txt
+
 # oh-my-zsh
 git clone --depth=1 https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
